@@ -15,9 +15,9 @@ desired_caps['app'] = ('C:/Users/user/Downloads/mobileApp.apk')
 desired_caps['appPackage'] = 'co.threewin.wowzi.app'
 desired_caps['appActivity'] = 'com.wazi.MainActivity'
 
-driver =webDriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
+driver =webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
 
-ele_id = driver.find_element(AppiumBy.xpath, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"
+ele_id = driver.find_element(AppiumBy.XPATH, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"
                                              "/android.widget.FrameLayout/android.widget.LinearLayout/android.widget"
                                              ".FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android"
                                              ".view.ViewGroup/android.view.ViewGroup["
